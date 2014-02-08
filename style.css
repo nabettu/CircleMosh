@@ -1,0 +1,272 @@
+/*
+Theme Name: Like Striking
+Theme URI: http://www.fuzzydevelopment.net/
+Description: Like Strikingly UI
+Version: 1.1
+Author: Takahiro kawakami
+Author URI: http://www.fuzzydevelopment.net/
+*/
+
+/* ==========================================================================
+general
+========================================================================== */
+
+html, body, div, span, iframe, strong,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, ul, li, article, footer, header, section
+{ 
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+article, footer, header, section
+{
+	display: block;
+}
+
+body {
+	text-align: center;
+	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+/* remove float */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+header
+========================================================================== */
+
+#header {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#fixed {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background-color: #ffffff;
+	box-shadow: 0 0 4px 0px;
+}
+
+#fixed img {
+	width: 300px;
+}
+
+#fixed ul {
+	width: 100%;
+	padding: 0 20%;
+	background-color: #ffffff;
+}
+
+#fixed li {
+	list-style: none;
+	width: 15%;
+	float: left;
+	font-size: 150%;
+}
+
+#headImage {
+	width: 100%;
+	margin: 130px 0 0 0;
+	height: auto;
+	min-height: 180px;
+}
+
+#headImage p {
+	padding: 70px 0 0 0;
+	font-size: 200%;
+	color: #ffffff;
+}
+
+/* ==========================================================================
+blog
+========================================================================== */
+
+/* article */
+
+#blog {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.entryTitle {
+	font-size: 150%;
+}
+
+.entrySummary {
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+.entrySummary img {
+	float: left;
+}
+
+.entrySummary p {
+	padding: 10px 0;
+	text-align: left;
+}
+
+.summaryMeta ul {
+
+}
+
+.summaryMeta li {
+	width: 37%;
+	list-style: none;
+	float: left;
+}
+
+.summaryMeta li:nth-child(1) {
+	text-align: left;
+}
+
+.summaryMeta li:nth-child(2) {
+	text-align: right;
+}
+
+/* archive */
+
+.archive {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.archive section {
+	width: 33%;
+	float: left;
+}
+
+.archive section p {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.archive section ul {
+
+}
+
+.archive section li {
+	list-style: none;
+}
+
+/* ==========================================================================
+app
+========================================================================== */
+
+#app {
+	background-color: #f4f4f4;
+}
+
+#app section {
+	padding: 10px 0;
+}
+
+#app h1 {
+	font-size: 150%;
+}
+
+#app img {
+	max-width: 100%;
+	height: auto;
+}
+
+#app p {
+
+}
+
+/* ==========================================================================
+about
+========================================================================== */
+
+#about {
+
+}
+
+#about section {
+	margin: 0 auto;
+	padding: 10px 0;
+	max-width: 45%;
+}
+
+#about h1 {
+	font-size: 150%;
+}
+
+#about img {
+	float: left;
+	margin:0 50px 0 0;
+	max-width: 100%;
+	height: auto;
+}
+
+#about p {
+	font-size: 120%;
+	margin: 10px 0 0 0;
+	text-align: left;
+}
+
+/* ==========================================================================
+contact
+========================================================================== */
+
+#contact {
+	width: 100%;
+	background-color: #9cefed;
+}
+
+#contact section {
+	margin: 0 auto;
+	padding: 10px 0;
+	max-width: 80%;
+}
+
+#contact h1 {
+	font-size: 150%;
+}
+
+#contact ul {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#contact li {
+	width: 33%;
+	height: auto;
+	list-style: none;
+	float: left;
+}
+
+#contact li:nth-child(2) {
+	width: 34%;
+}
+
+#contact li img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ==========================================================================
+footer
+========================================================================== */
+
+#mainFooter {
+	padding: 20px 0;
+	background-color: #9cefed;
+}
