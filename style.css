@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Like Striking
 Theme URI: http://www.fuzzydevelopment.net/
@@ -25,9 +26,10 @@ article, footer, header, section
 	display: block;
 }
 
-body {
+body, a:link, a:hover, a:visited{
 	text-align: center;
 	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+	color: #2b2b2b;
 }
 
 /* remove float */
@@ -63,6 +65,11 @@ header
 	box-shadow: 0 0 4px 0px;
 }
 
+#fixed li a:link, a:hover, a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+
 #fixed img {
 	width: 300px;
 }
@@ -78,11 +85,17 @@ header
 	width: 15%;
 	float: left;
 	font-size: 150%;
+	font-weight: lighter;
+}
+
+#fixed li a:hover {
+	color: #8db6cd;
+	text-decoration: none;
 }
 
 #headImage {
 	width: 100%;
-	margin: 130px 0 0 0;
+	margin: 110px 0 0 0;
 	height: auto;
 	min-height: 180px;
 }
@@ -102,6 +115,15 @@ blog
 #blog {
 	width: 100%;
 	margin: 0 auto;
+}
+
+#blog article {
+	margin: 20px 0;
+}
+
+#blog a:link, a:hover, a:visited {
+	text-decoration: underline;
+	color: #5fbda0;
 }
 
 .entryTitle {
@@ -144,7 +166,7 @@ blog
 
 .archive {
 	width: 100%;
-	margin: 0 auto;
+	min-height: 280px;
 }
 
 .archive section {
@@ -157,12 +179,80 @@ blog
 	font-weight: bold;
 }
 
-.archive section ul {
+.archive section ul a:link, a:visited {
+	text-decoration: none;
+}
 
+.archive section ul a:hover {
+	color: #5fbda0;
+	text-decoration: underline;
 }
 
 .archive section li {
 	list-style: none;
+	margin: 5px 0;
+}
+
+/* entry */
+
+#entryContent a:link, a:hover, a:visited {
+	text-decoration: underline;
+	color: #5fbda0;
+}
+
+#entryContent h1, h2, h3, h4, h5, h6 {
+	text-align: left;
+	font-size: 150%;
+	color: #5fbda0;
+}
+
+#entryContent {
+	width: 100%;
+	margin: 130px 0 0 0;
+	line-height:200%;
+}
+
+#entryContent article {
+	max-width: 800px; 
+	margin: 0 auto;
+}
+
+#entryContent header {
+
+}
+
+#entryContent h1 {
+	margin: 20px 0;
+}
+
+#entryContent h2 {
+
+}
+
+.entryMeta ul {
+
+}
+
+.entryMeta li {
+	width: 50%;
+	list-style: none;
+	float: left;
+	border-bottom: 2px dotted #cccccc;
+}
+
+#entryBody {
+	text-align: left;
+}
+
+#entryBody p {
+	margin: 25px 0;
+}
+
+#entryBody img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 25px auto;
 }
 
 /* ==========================================================================
@@ -171,6 +261,7 @@ app
 
 #app {
 	background-color: #f4f4f4;
+	min-height: 280px;
 }
 
 #app section {
@@ -195,7 +286,7 @@ about
 ========================================================================== */
 
 #about {
-
+	min-height: 280px;
 }
 
 #about section {
@@ -227,6 +318,7 @@ contact
 
 #contact {
 	width: 100%;
+	min-height: 280px;
 	background-color: #9cefed;
 }
 
