@@ -12,18 +12,35 @@ Author URI: http://www.fuzzydevelopment.net/
 general
 ========================================================================== */
 
-html, body, div, span, iframe, strong,
+html, body, div, span, applet, object, iframe, strong,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, ul, li, article, footer, header, section
-{ 
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend, caption, 
+tbody, tfoot, thead, table, label, tr, th, td {
 	margin: 0;
 	padding: 0;
+	border: 0;
+/* 	font: inherit; */
 	font-size: 100%;
+	vertical-align: baseline;
 }
 
-article, footer, header, section
-{
-	display: block;
+body {line-height: 1;}
+
+ol, ul {list-style: none;}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header,footer,nav,article,section,aside {display: block;}
+
+img {
+	vertical-align: bottom;
 }
 
 body, a:link, a:hover, a:visited {
@@ -80,22 +97,23 @@ header
 	color: #999999;
 }
 
+#fixed li a:hover {
+	color: #8db6cd;
+	text-decoration: none;
+}
+
 #fixed li {
 	list-style: none;
 	width: 15%;
 	float: left;
 	font-size: 150%;
 	font-weight: lighter;
-}
-
-#fixed li a:hover {
-	color: #8db6cd;
-	text-decoration: none;
+	padding: 2px 0;
 }
 
 #headImage {
 	width: 100%;
-	margin: 110px 0 0 0;
+	margin: 104px 0 0 0;
 	height: auto;
 	min-height: 180px;
 }
