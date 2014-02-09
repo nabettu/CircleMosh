@@ -79,6 +79,14 @@ h1, h2, h3, h4, h5, h6, /* (nav) */#fixed li {font-size: 150%;}
 
 section {padding: 4% 0;}
 
+@media screen and (max-width: 640px) {
+
+	body {
+		font-size: 120%;
+	}
+
+}
+
 /* ==========================================================================
 header
 ========================================================================== */
@@ -134,6 +142,32 @@ header
 	color: #ffffff;
 }
 
+
+@media screen and (max-width: 640px) {
+
+	#fixed img {
+		width: 200px;
+	}
+
+	#fixed ul {
+		padding: 0;
+	}
+
+	#fixed li {
+		font-size: 110%;
+		width: 25%;
+	}
+	
+	#headImage {
+		margin: 80px 0 0 0;
+	}
+	
+	#headImage p {
+		padding: 50px 0 0 0;
+	}
+	
+}
+
 /* ==========================================================================
 blog
 ========================================================================== */
@@ -177,6 +211,36 @@ blog
 	float: left;
 }
 
+@media screen and (max-width: 640px) {
+
+	.entrySummary img {
+		float: none;
+		max-width: 100%;
+		margin: 0;
+	}
+	
+	.summaryMeta li {
+		float: none;
+		margin: 15px 0;
+	}
+	
+	#blog header {
+		max-width: 100%;
+	}
+	
+	#blog h1 {
+		max-width: 95%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	
+	.entrySummary p {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+}
+
 /* archive */
 
 #archive {
@@ -207,6 +271,15 @@ blog
 	margin: 0.5em 0 0 0;
 }
 
+@media screen and (max-width: 640px) {
+	
+	#archive section {
+		float: none;
+		width: 95%;
+	}
+	
+}
+
 /* entry */
 
 #entryContent a:link, #entryContent a:hover, #entryContent a:visited {
@@ -220,7 +293,7 @@ blog
 }
 
 #entryContent {
-	margin: 130px 0 0 0;
+	margin: 80px 0 0 0;
 	line-height:200%;
 }
 
@@ -264,6 +337,35 @@ blog
 	margin: 25px auto;
 }
 
+@media screen and (max-width: 640px) {
+
+	#entryContent header {
+		max-width: 100%;
+		border-bottom: 2px dotted #cccccc;
+	}
+
+	#entryContent h1 {
+		
+		max-width: 95%;
+		margin: 0 auto;
+	}
+	
+	#entryMeta li {
+		float: none;
+		width: 100%;
+		border: none;
+	}
+
+	#entryBody {
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	#entryBody img {
+		width: 100%;
+	}
+}
+
 /* ==========================================================================
 app
 ========================================================================== */
@@ -288,6 +390,19 @@ app
 #app p {
 	padding: 10px 0;
 	font-size: 120%;
+}
+
+@media screen and (max-width: 640px) {
+
+	#app p {
+		padding: 0;
+	}
+
+	#app img {
+		max-width: 20%;
+		height: auto;
+	}
+
 }
 
 /* ==========================================================================
@@ -318,6 +433,23 @@ about
 	text-align: left;
 	line-height:200%;
 	margin: 0 20% 0 2%;	
+}
+
+@media screen and (max-width: 640px) {
+
+	#about img {
+		max-width: 50%;
+		float: none;
+		margin: 0;
+	}
+	
+	#about p {
+		text-align: left;
+		line-height:2;
+		margin: 0 auto;
+		padding: 0 5%;
+		font-size: 100%;
+	}
 }
 
 /* ==========================================================================
@@ -351,6 +483,22 @@ contact
 
 #contact li img {
 	max-width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	
+	#contact section {
+		max-width: 100%;
+	}
+	
+	#contact ul {
+		max-width: 100%;
+	}
+	
+	#contact li img {
+		max-width: 70%;
+	}
+	
 }
 
 /* ==========================================================================
