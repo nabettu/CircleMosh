@@ -26,7 +26,7 @@ article, footer, header, section
 	display: block;
 }
 
-body, a:link, a:hover, a:visited{
+body, a:link, a:hover, a:visited {
 	text-align: center;
 	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
 	color: #2b2b2b;
@@ -65,11 +65,6 @@ header
 	box-shadow: 0 0 4px 0px;
 }
 
-#fixed li a:link, a:hover, a:visited {
-	text-decoration: none;
-	color: #999999;
-}
-
 #fixed img {
 	width: 300px;
 }
@@ -78,6 +73,11 @@ header
 	width: 100%;
 	padding: 0 20%;
 	background-color: #ffffff;
+}
+
+#fixed li a:link, a:hover, a:visited {
+	text-decoration: none;
+	color: #999999;
 }
 
 #fixed li {
@@ -118,7 +118,7 @@ blog
 }
 
 #blog article {
-	margin: 20px 0;
+	padding: 40px 0;
 }
 
 #blog a:link, a:hover, a:visited {
@@ -128,20 +128,23 @@ blog
 
 .entryTitle {
 	font-size: 150%;
+	margin: 0 0 20px 0;
 }
 
 .entrySummary {
 	max-width: 800px;
-	margin: 10px auto;
+	margin: 0px auto;
 }
 
 .entrySummary img {
 	float: left;
+	max-width: 100%;
+	margin-right: 30px;
 }
 
 .entrySummary p {
-	padding: 10px 0;
 	text-align: left;
+	line-height:200%;
 }
 
 .summaryMeta ul {
@@ -149,8 +152,9 @@ blog
 }
 
 .summaryMeta li {
-	width: 37%;
+/* 	width: 37%; */
 	list-style: none;
+	margin: 10px 20px 0px 0;
 	float: left;
 }
 
@@ -165,16 +169,17 @@ blog
 /* archive */
 
 .archive {
-	width: 100%;
-	min-height: 280px;
+
 }
 
 .archive section {
-	width: 33%;
+	padding: 4% 0;
+	width: 33.3%;
 	float: left;
 }
 
 .archive section p {
+	margin: 0 0 20px 0;
 	font-size: 120%;
 	font-weight: bold;
 }
@@ -190,7 +195,7 @@ blog
 
 .archive section li {
 	list-style: none;
-	margin: 5px 0;
+	margin: 5px 0 0 0;
 }
 
 /* entry */
@@ -261,15 +266,16 @@ app
 
 #app {
 	background-color: #f4f4f4;
-	min-height: 280px;
 }
 
 #app section {
-	padding: 10px 0;
+	padding: 4% 0;
 }
 
 #app h1 {
+	margin: 0 0 20px 0;
 	font-size: 150%;
+	margin 20px 0;
 }
 
 #app img {
@@ -278,7 +284,8 @@ app
 }
 
 #app p {
-
+	padding: 10px 0;
+	font-size: 120%;
 }
 
 /* ==========================================================================
@@ -286,30 +293,30 @@ about
 ========================================================================== */
 
 #about {
-	min-height: 280px;
+
 }
 
 #about section {
-	margin: 0 auto;
-	padding: 10px 0;
-	max-width: 45%;
+	padding: 4% 0;
 }
 
 #about h1 {
+	margin: 0 0 20px 0;
 	font-size: 150%;
 }
 
 #about img {
 	float: left;
-	margin:0 50px 0 0;
 	max-width: 100%;
 	height: auto;
+	margin: 0 2% 0 20%;
 }
 
 #about p {
 	font-size: 120%;
-	margin: 10px 0 0 0;
 	text-align: left;
+	line-height:200%;
+	margin: 0 20% 0 2%;	
 }
 
 /* ==========================================================================
@@ -317,25 +324,23 @@ contact
 ========================================================================== */
 
 #contact {
-	width: 100%;
-	min-height: 280px;
 	background-color: #9cefed;
 }
 
 #contact section {
 	margin: 0 auto;
-	padding: 10px 0;
+	padding: 4% 0;
 	max-width: 80%;
 }
 
 #contact h1 {
+	margin: 0 0 20px 0;
 	font-size: 150%;
 }
 
 #contact ul {
 	max-width: 80%;
 	margin: 0 auto;
-	padding: 0;
 }
 
 #contact li {
