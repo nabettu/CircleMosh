@@ -28,8 +28,6 @@ tbody, tfoot, thead, table, label, tr, th, td {
 	vertical-align: baseline;
 }
 
-body {line-height: 1;}
-
 ol, ul {list-style: none;}
 
 table {
@@ -43,11 +41,13 @@ img {
 	vertical-align: bottom;
 }
 
-body, a:link, a:hover, a:visited {
+body {
 	text-align: center;
 	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
-	color: #2b2b2b;
+	line-height: 1;
 }
+
+a:link, a:hover, a:visited {color: #2b2b2b;}
 
 /* remove float */
 
@@ -65,13 +65,26 @@ body, a:link, a:hover, a:visited {
     *zoom: 1;
 }
 
+/* centering */
+
+.centering {margin: 0 auto;}
+
+/* title */
+
+h1, h2, h3, h4, h5, h6, /* (nav) */#fixed li {font-size: 150%;}
+
+.title {margin: 0 0 20px 0;}
+
+/* section */
+
+section {padding: 4% 0;}
+
 /* ==========================================================================
 header
 ========================================================================== */
 
 #header {
-	width: 100%;
-	margin: 0 auto;
+
 }
 
 #fixed {
@@ -92,7 +105,7 @@ header
 	background-color: #ffffff;
 }
 
-#fixed li a:link, a:hover, a:visited {
+#fixed li a:link, #fixed li a:visited {
 	text-decoration: none;
 	color: #999999;
 }
@@ -103,16 +116,13 @@ header
 }
 
 #fixed li {
-	list-style: none;
 	width: 15%;
 	float: left;
-	font-size: 150%;
 	font-weight: lighter;
 	padding: 2px 0;
 }
 
 #headImage {
-	width: 100%;
 	margin: 104px 0 0 0;
 	height: auto;
 	min-height: 180px;
@@ -131,27 +141,20 @@ blog
 /* article */
 
 #blog {
-	width: 100%;
-	margin: 0 auto;
+
 }
 
 #blog article {
 	padding: 40px 0;
 }
 
-#blog a:link, a:hover, a:visited {
+#blog article a:link, #blog article a:hover, #blog article a:visited {
 	text-decoration: underline;
 	color: #5fbda0;
 }
 
-.entryTitle {
-	font-size: 150%;
-	margin: 0 0 20px 0;
-}
-
 .entrySummary {
 	max-width: 800px;
-	margin: 0px auto;
 }
 
 .entrySummary img {
@@ -170,74 +173,59 @@ blog
 }
 
 .summaryMeta li {
-/* 	width: 37%; */
-	list-style: none;
 	margin: 10px 20px 0px 0;
 	float: left;
 }
 
-.summaryMeta li:nth-child(1) {
-	text-align: left;
-}
-
-.summaryMeta li:nth-child(2) {
-	text-align: right;
-}
-
 /* archive */
 
-.archive {
+#archive {
 
 }
 
-.archive section {
-	padding: 4% 0;
+#archive section {
 	width: 33.3%;
 	float: left;
 }
 
-.archive section p {
-	margin: 0 0 20px 0;
+#archive section p {
 	font-size: 120%;
 	font-weight: bold;
 }
 
-.archive section ul a:link, a:visited {
+#archive section ul a:link, #archive section ul a:visited {
 	text-decoration: none;
+	color: #2b2b2b;
 }
 
-.archive section ul a:hover {
+#archive section ul a:hover {
 	color: #5fbda0;
 	text-decoration: underline;
 }
 
-.archive section li {
-	list-style: none;
-	margin: 5px 0 0 0;
+#archive section li {
+	margin: 0.5em 0 0 0;
 }
 
 /* entry */
 
-#entryContent a:link, a:hover, a:visited {
+#entryContent a:link, #entryContent a:hover, #entryContent a:visited {
 	text-decoration: underline;
 	color: #5fbda0;
 }
 
 #entryContent h1, h2, h3, h4, h5, h6 {
 	text-align: left;
-	font-size: 150%;
 	color: #5fbda0;
 }
 
 #entryContent {
-	width: 100%;
 	margin: 130px 0 0 0;
 	line-height:200%;
 }
 
 #entryContent article {
 	max-width: 800px; 
-	margin: 0 auto;
 }
 
 #entryContent header {
@@ -252,13 +240,12 @@ blog
 
 }
 
-.entryMeta ul {
+#entryMeta ul {
 
 }
 
-.entryMeta li {
+#entryMeta li {
 	width: 50%;
-	list-style: none;
 	float: left;
 	border-bottom: 2px dotted #cccccc;
 }
@@ -272,7 +259,6 @@ blog
 }
 
 #entryBody img {
-	display: block;
 	width: 100%;
 	height: auto;
 	margin: 25px auto;
@@ -287,13 +273,11 @@ app
 }
 
 #app section {
-	padding: 4% 0;
+
 }
 
 #app h1 {
-	margin: 0 0 20px 0;
-	font-size: 150%;
-	margin 20px 0;
+
 }
 
 #app img {
@@ -315,12 +299,11 @@ about
 }
 
 #about section {
-	padding: 4% 0;
+
 }
 
 #about h1 {
-	margin: 0 0 20px 0;
-	font-size: 150%;
+
 }
 
 #about img {
@@ -346,25 +329,19 @@ contact
 }
 
 #contact section {
-	margin: 0 auto;
-	padding: 4% 0;
 	max-width: 80%;
 }
 
 #contact h1 {
-	margin: 0 0 20px 0;
-	font-size: 150%;
+
 }
 
 #contact ul {
 	max-width: 80%;
-	margin: 0 auto;
 }
 
 #contact li {
 	width: 33%;
-	height: auto;
-	list-style: none;
 	float: left;
 }
 
@@ -374,7 +351,6 @@ contact
 
 #contact li img {
 	max-width: 100%;
-	height: auto;
 }
 
 /* ==========================================================================
