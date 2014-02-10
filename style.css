@@ -51,17 +51,17 @@ a:link, a:hover, a:visited {color: #2b2b2b;}
 
 /* remove float */
 
-.cf:before,
-.cf:after {
+.clearfix:before,
+.clearfix:after {
     content: " ";
     display: table;
 }
 
-.cf:after {
+.clearfix:after {
     clear: both;
 }
 
-.cf {
+.clearfix {
     *zoom: 1;
 }
 
@@ -293,7 +293,7 @@ blog
 }
 
 #entryContent {
-	margin: 80px 0 0 0;
+	margin: 120px 0 0 0;
 	line-height:200%;
 }
 
@@ -338,6 +338,10 @@ blog
 }
 
 @media screen and (max-width: 640px) {
+
+	#entryContent {
+		margin: 80px 0 0 0;
+	}
 
 	#entryContent header {
 		max-width: 100%;
