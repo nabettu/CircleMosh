@@ -2,24 +2,15 @@
 	<div id="archive" class="clearfix">
 	
 		<section>
-			<p class="title">最近の投稿</p>
-			<ul>
-				<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(footerleft);?>
-			</ul>
+			<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(archive);?>
 		</section>
 
 		<section>
-			<p class="title">アーカイブ</p>
-			<ul>
-				<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(footercenter);?>
-			</ul>
+			<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(archive);?>
 		</section>
 
 		<section>
-			<p class="title">カテゴリー</p>
-			<ul>
-				<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(footerright);?>
-			</ul>
+			<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(archive);?>
 		</section>
 		
 	</div>
