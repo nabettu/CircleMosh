@@ -1,0 +1,63 @@
+	<!-- archive -->
+	<div id="archive" class="clearfix">
+	
+		<section>
+			<p class="title">最近の投稿</p>
+			<ul>
+				<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(footerleft);?>
+			</ul>
+		</section>
+
+		<section>
+			<p class="title">アーカイブ</p>
+			<ul>
+				<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(footercenter);?>
+			</ul>
+		</section>
+
+		<section>
+			<p class="title">カテゴリー</p>
+			<ul>
+				<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(footerright);?>
+			</ul>
+		</section>
+		
+	</div>
+	<!-- app -->
+	<div id="app">
+		<section>
+			<h1 class="title">App</h1>
+			<p class="appTitle">feedleaf</p>
+			<img src="img/hatena_feedleaf_icon_150.png">
+		</section>
+	</div>
+	<!-- about -->
+	<div id="about">
+		<section class="clearfix">
+			<h1 class="title">About</h1>
+			<img src="img/profile_200.png">
+			<p>ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。</p>
+		</section>
+	</div>
+	<!-- contact -->
+	<div id="contact">
+		<section class="centering">
+			<h1 class="title">Contact</h1>
+			<ul class="centering clearfix">
+				<li><img src="img/twitter-icon.png"></li>
+				<li><img src="img/fb-icon.png"></li>
+				<li><img src="img/206.png"></li>
+<!-- 				<li><img src="img/206.png"></li> -->
+			</ul>
+		</section>
+	</div>
+	<!-- footer -->
+	<footer id="mainFooter">
+		<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.
+                         Theme Design by <a href="http://www.fuzzydevelopment.net/">Takahiro Kawakami</a>;
+                         from <a href="http://www.fuzzydevelopment.net/">Fuzzyデベロップメント</a>;</p>
+	</footer>
+</div>
+<?php wp_footer(); ?> 
+</body>
+</html>
