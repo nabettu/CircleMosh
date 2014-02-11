@@ -319,9 +319,10 @@ blog
 }
 
 #entryMeta li {
-	width: 50%;
+	width: 33.3%;
 	float: left;
-	border-bottom: 2px dotted #cccccc;
+	text-align: left;
+	border-bottom: 1px dashed #cccccc;
 }
 
 #entryBody {
