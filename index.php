@@ -1,21 +1,31 @@
 	<?php get_header(); ?>
 	<!-- blog -->
 	<div id="blog">
-	
-		<article>
-			<header>
-				<h1 class="title"><a href="single.html" title="">PHPの入門で読んだ本の紹介</a></h1>
-			</header>
-			<div class="entrySummary centering">
-				<a href="#"><img src="img/icatch.jpg"></a>
-				<p>WEBアプリに関してはPHPでつくって行こうと思って入門書を数冊読み漁ったのでそれらの紹介です。まだ全然ゴリゴリ書いている訳ではないので、素人感から抜け出せてはないですが、書いていきます。 基礎からの</p>
-				<ul class="summaryMeta clearfix">
-					<li><a href="#" title="「PHPの入門で読んだ本の紹介」の続きを読む">続きを読む</a></li>
-					<li>カテゴリー： <a href="#" title="PHP の投稿をすべて表示" rel="category tag">PHP</a> <a href="#" title="WEB開発 の投稿をすべて表示" rel="category tag">WEB開発</a></li>
-				</ul>
-			</div>
-		</article>
-
+		<?php if (have_posts()) : ?>
+			<?php while (have_posts()) : the_post(); ?>
+				<article>
+					<header>
+						<h1 class="title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_title(); ?></a></h1>
+					</header>
+					<div class="entrySummary centering">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+						<?php endif;?>
+						<p><?php the_content(); ?></p>
+						<ul class="summaryMeta clearfix">
+							<li><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">続きを読む</a></li>
+							<li>カテゴリー： <?php the_category(', ') ?></li>
+							<li>タグ： <?php the_tags('', ', '); ?></li>
+						</ul>
+					</div>
+				</article>
+			<?php endwhile; ?>
+		<?php else : ?>
+			<h2 class="title">記事が見つかりませんでした。</h2>
+			<p>検索で見つかるかもしれません。</p><br />
+			<?php get_search_form(); ?>
+		<?php endif; ?>
 	</div>
 	<!-- page -->
 	<div class='wp-pagenavi'>
