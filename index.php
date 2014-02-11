@@ -12,7 +12,7 @@
 						<?php if ( has_post_thumbnail() ) : ?>
 							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('excerpt-thumbnail') ?></a>
 						<?php endif;?>
-						<p><?php the_excerpt(); ?></p>
+						<?php the_excerpt(); ?>
 						<ul class="summaryMeta clearfix">
 							<li><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">続きを読む</a></li>
 							<li>カテゴリー： <?php the_category(', ') ?></li>
@@ -22,9 +22,9 @@
 				</article>
 			<?php endwhile; ?>
 			<!-- page -->
-			<div id="pagination">
+			<div id="paginationBox" class="clearfix">
 				<?php if (function_exists("pagination")) {
-					pagination($additional_loop->max_num_pages);
+					pagination($wp_query->max_num_pages);
 				} ?>
 			</div>
 		<?php else : ?>

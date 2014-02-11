@@ -1,18 +1,6 @@
 	<!-- archive -->
 	<div id="archive" class="clearfix">
-	
-		<section>
-			<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(archive);?>
-		</section>
-
-		<section>
-			<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(archive);?>
-		</section>
-
-		<section>
-			<?php if(function_exists('dynamic_sidebar') ) dynamic_sidebar(archive);?>
-		</section>
-		
+		<?php get_sidebar('footer'); ?>
 	</div>
 	<!-- app -->
 	<div id="app">
@@ -44,9 +32,7 @@
 	</div>
 	<!-- footer -->
 	<footer id="mainFooter">
-		<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.
-                         Theme Design by <a href="http://www.fuzzydevelopment.net/">Takahiro Kawakami</a>;
-                         from <a href="http://www.fuzzydevelopment.net/">Fuzzyデベロップメント</a>;</p>
+		<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</a></p>
 	</footer>
 </div>
 <?php wp_footer(); ?> 
