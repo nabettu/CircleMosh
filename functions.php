@@ -1,4 +1,6 @@
 <?php
+// 管理バー
+add_filter( 'show_admin_bar', '__return_false' ); 
 
 // footerエリアのウィジェット
 register_sidebar(

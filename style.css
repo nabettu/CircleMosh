@@ -46,9 +46,10 @@ body {
 	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
 	line-height: 1;
 	background-color: #ffffff;
+	color: #666;
 }
 
-a:link, a:hover, a:visited {color: #2b2b2b;}
+a {color: #666; text-decoration: none;}
 
 /* remove float */
 
@@ -160,7 +161,7 @@ header
 	}
 	
 	#headImage {
-		margin: 80px 0 0 0;
+		margin: 76px 0 0 0;
 	}
 	
 	#headImage p {
@@ -183,7 +184,7 @@ blog
 	padding: 40px 0;
 }
 
-#blog article a:link, #blog article a:hover, #blog article a:visited {
+#blog article h1 a:hover {
 	text-decoration: underline;
 	color: #5fbda0;
 }
@@ -203,13 +204,21 @@ blog
 	line-height:200%;
 }
 
-.summaryMeta ul {
-
-}
-
 .summaryMeta li {
 	margin: 10px 20px 0px 0;
 	float: left;
+}
+
+.summaryMeta li a {
+	text-decoration: underline;
+	color: #5fbda0;
+}
+
+.summaryMeta li:nth-child(1) a {
+	color: #ffffff;
+	padding: 5px;
+	background-color: #5fbda0;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 640px) {
@@ -264,8 +273,10 @@ blog
 }
 
 #archive section ul a:link, #archive section ul a:visited {
-	text-decoration: none;
+	/*
+text-decoration: none;
 	color: #2b2b2b;
+*/
 }
 
 #archive section ul a:hover {
@@ -288,7 +299,7 @@ blog
 
 /* entry */
 
-#entryContent a:link, #entryContent a:hover, #entryContent a:visited {
+#entryContent a {
 	text-decoration: underline;
 	color: #5fbda0;
 }
