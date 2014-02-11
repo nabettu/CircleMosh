@@ -45,6 +45,7 @@ body {
 	text-align: center;
 	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
 	line-height: 1;
+	background-color: #ffffff;
 }
 
 a:link, a:hover, a:visited {color: #2b2b2b;}
@@ -175,7 +176,7 @@ blog
 /* article */
 
 #blog {
-
+	
 }
 
 #blog article {

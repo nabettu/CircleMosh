@@ -15,8 +15,8 @@
 	<!-- header -->
 	<div id="header">
 		<div id="fixed">
-			<a href="#"><img src="img/bloglogo.png"></a>
-			<ul class="http://www.fuzzydevelopment.net/css-245.html">
+			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/bloglogo.png"></a>
+			<ul class="clearfix">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">App</a></li>
 				<li><a href="#">About</a></li>
@@ -24,7 +24,7 @@
 			</ul>
 		</div>
 		<?php if(is_home()): // ホームが表示されている場合、header img を表示 ?>
-			<div id="headImage" style="background:url(<?php bloginfo('template_url'); ?>img/header.png)">
+			<div id="headImage" style="background:url(<?php bloginfo('template_url'); ?>/img/header.png)">
 				<p>昼飯おごって(^o^)/</p>
 			</div>
 		<?php endif; ?>

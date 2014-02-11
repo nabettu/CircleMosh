@@ -10,9 +10,9 @@
 					</header>
 					<div class="entrySummary centering">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('post-thumbnails'); ?></a>
 						<?php endif;?>
-						<p><?php the_content(); ?></p>
+						<p><?php the_excerpt(); ?></p>
 						<ul class="summaryMeta clearfix">
 							<li><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">続きを読む</a></li>
 							<li>カテゴリー： <?php the_category(', ') ?></li>
@@ -21,6 +21,10 @@
 					</div>
 				</article>
 			<?php endwhile; ?>
+			<div class='wp-pagenavi'>
+				<span class="nav-previous"><?php previous_post_link('%link', '古い記事へ'); ?></span>
+				<span class="nav-next"><?php next_post_link('%link', '新しい記事へ'); ?></span>
+			</div>	
 		<?php else : ?>
 			<h2 class="title">記事が見つかりませんでした。</h2>
 			<p>検索で見つかるかもしれません。</p><br />
@@ -28,7 +32,4 @@
 		<?php endif; ?>
 	</div>
 	<!-- page -->
-	<div class='wp-pagenavi'>
-		（ページ送りスペース）
-	</div>
 	<?php get_footer(); ?>

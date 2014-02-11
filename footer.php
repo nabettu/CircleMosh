@@ -19,14 +19,14 @@
 		<section>
 			<h1 class="title">App</h1>
 			<p class="appTitle">feedleaf</p>
-			<img src="img/hatena_feedleaf_icon_150.png">
+			<img src="<?php bloginfo('template_url'); ?>/img/hatena_feedleaf_icon_150.png">
 		</section>
 	</div>
 	<!-- about -->
 	<div id="about">
 		<section class="clearfix">
 			<h1 class="title">About</h1>
-			<img src="img/profile_200.png">
+			<img src="<?php bloginfo('template_url'); ?>/img/profile_200.png">
 			<p>ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。</p>
 		</section>
 	</div>
@@ -35,9 +35,9 @@
 		<section class="centering">
 			<h1 class="title">Contact</h1>
 			<ul class="centering clearfix">
-				<li><img src="img/twitter-icon.png"></li>
-				<li><img src="img/fb-icon.png"></li>
-				<li><img src="img/206.png"></li>
+				<li><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png"></li>
+				<li><img src="<?php bloginfo('template_url'); ?>/img/fb-icon.png"></li>
+				<li><img src="<?php bloginfo('template_url'); ?>/img/206.png"></li>
 <!-- 				<li><img src="img/206.png"></li> -->
 			</ul>
 		</section>
