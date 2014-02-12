@@ -46,10 +46,10 @@ body {
 	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
 	line-height: 1;
 	background-color: #ffffff;
-	color: #666;
+	color: #3d3d3d;
 }
 
-a {color: #666; text-decoration: none;}
+a {color: #3d3d3d; text-decoration: none;}
 
 /* remove float */
 
@@ -164,9 +164,11 @@ header
 		margin: 76px 0 0 0;
 	}
 	
-	#headImage p {
-		padding: 50px 0 0 0;
+	/*
+#headImage p {
+		padding: 70px 0 0 0;
 	}
+*/
 	
 }
 
@@ -218,6 +220,13 @@ blog
 	color: #ffffff;
 	padding: 5px;
 	background-color: #5fbda0;
+	text-decoration: none;
+}
+
+.summaryMeta li:nth-child(1) a:hover {
+	color: #ffffff;
+	padding: 5px;
+	background-color: #8db6cd;
 	text-decoration: none;
 }
 
