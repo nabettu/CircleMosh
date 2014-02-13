@@ -134,7 +134,6 @@ header
 
 #headImage {
 	margin: 104px 0 0 0;
-	height: auto;
 	min-height: 180px;
 }
 
@@ -164,11 +163,9 @@ header
 		margin: 76px 0 0 0;
 	}
 	
-	/*
-#headImage p {
-		padding: 70px 0 0 0;
+	#headImage p {
+		padding: 56px 0 0 0;
 	}
-*/
 	
 }
 
@@ -263,7 +260,8 @@ blog
 /* archive */
 
 #archive {
-
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 #archive section {

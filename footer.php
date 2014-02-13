@@ -23,9 +23,9 @@
 		<section class="centering">
 			<h1 class="title">Contact</h1>
 			<ul class="centering clearfix">
-				<li><img src="<?php bloginfo('template_url'); ?>/img/twitter-icon.png"></li>
-				<li><img src="<?php bloginfo('template_url'); ?>/img/fb-icon.png"></li>
-				<li><img src="<?php bloginfo('template_url'); ?>/img/206.png"></li>
+				<li><a href="https://twitter.com/CHUCKER34"><img src="<?php bloginfo('template_url'); ?>/img/twitter_160.png"></a></li>
+				<li><a href="https://www.facebook.com/chucker34"><img src="<?php bloginfo('template_url'); ?>/img/facebook_160.png"></a></li>
+				<li><img src="<?php bloginfo('template_url'); ?>/img/mail_160.png"></li>
 <!-- 				<li><img src="img/206.png"></li> -->
 			</ul>
 		</section>

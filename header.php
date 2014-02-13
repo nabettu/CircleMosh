@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css">
 <meta name="viewport" content="width=device-width" />
 <meta name="description" content="Strikingly風UIのWordPressテーマです。">
 <meta name="keywords" content="WordPress 無料 テーマ, Strikingly">
@@ -32,7 +33,7 @@
 			</ul>
 		</div>
 		<?php if(!is_single()): // 記事ページではない場合header画像を表示 ?>
-			<div id="headImage" style="background:url(<?php bloginfo('template_url'); ?>/img/header.png)">
+			<div id="headImage" style="background:url(<?php bloginfo('template_url'); ?>/img/header.png) no-repeat; background-size: cover;">
 				<p>昼飯おごって(^o^)/</p>
 			</div>
 		<?php endif; ?>
