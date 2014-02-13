@@ -7,7 +7,7 @@
 		<section>
 			<h1 class="title">App</h1>
 			<p class="appTitle">feedleaf</p>
-			<img src="<?php bloginfo('template_url'); ?>/img/hatena_feedleaf_icon_150.png">
+			<a href="https://itunes.apple.com/us/app/feedleaf/id719049317"><img src="<?php bloginfo('template_url'); ?>/img/hatena_feedleaf_icon_150.png"></a>
 		</section>
 	</div>
 	<!-- about -->
@@ -15,7 +15,7 @@
 		<section class="clearfix">
 			<h1 class="title">About</h1>
 			<img src="<?php bloginfo('template_url'); ?>/img/profile_200.png">
-			<p>ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。ただのクズです。</p>
+			<p>クズなりにコードを学んでいます。何かWEBサービスをつくろうと模索中。最終目標はアングラー兼エンジニアです。</p>
 		</section>
 	</div>
 	<!-- contact -->

@@ -314,11 +314,6 @@ blog
 	color: #8db6cd;
 }
 
-#entryContent h1 {
-	text-align: left;
-	color: #51A188;
-}
-
 #entryContent {
 	margin: 120px 0 0 0;
 	line-height:200%;
@@ -328,11 +323,9 @@ blog
 	max-width: 800px; 
 }
 
-#entryContent header {
-
-}
-
 #entryContent h1 {
+	text-align: left;
+	color: #51A188;
 	margin: 20px 0;
 }
 
