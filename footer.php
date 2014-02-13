@@ -7,7 +7,7 @@
 		<section>
 			<h1 class="title">App</h1>
 			<p class="appTitle">feedleaf</p>
-			<a href="https://itunes.apple.com/us/app/feedleaf/id719049317"><img src="<?php bloginfo('template_url'); ?>/img/hatena_feedleaf_icon_150.png"></a>
+			<a href="https://itunes.apple.com/us/app/feedleaf/id719049317"><img src="<?php bloginfo('template_url'); ?>/img/feedleaf_150.png"></a>
 		</section>
 	</div>
 	<!-- about -->
