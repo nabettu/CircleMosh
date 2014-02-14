@@ -1,13 +1,14 @@
 	<!-- archive -->
 	<div id="archive" class="clearfix">
+		<!-- widget -->
 		<?php get_sidebar('footer'); ?>
 	</div>
 	<!-- app -->
 	<div id="app">
 		<section>
 			<h1 class="title">App</h1>
-			<p class="appTitle">feedleaf</p>
-			<a href="https://itunes.apple.com/us/app/feedleaf/id719049317"><img src="<?php bloginfo('template_url'); ?>/img/feedleaf_150.png"></a>
+			<p class="appTitle">your app</p>
+			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/profile_200.png"></a>
 		</section>
 	</div>
 	<!-- about -->
