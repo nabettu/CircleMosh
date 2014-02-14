@@ -4,8 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta name="viewport" content="width=device-width" />
+<!--
 <meta name="description" content="Strikingly風UIのWordPressテーマです。">
 <meta name="keywords" content="WordPress 無料 テーマ, Strikingly">
+-->
 <!-- WordPressのjQueryを読み込ませない -->
 <?php wp_deregister_script('jquery'); ?>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>

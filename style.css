@@ -2,7 +2,7 @@
 /*
 Theme Name: Like Striking
 Theme URI: http://www.fuzzydevelopment.net/
-Description: Like Strikingly UI
+Description: Like a Strikingly UI
 Version: 1.1
 Author: Takahiro kawakami
 Author URI: http://www.fuzzydevelopment.net/
@@ -23,7 +23,6 @@ tbody, tfoot, thead, table, label, tr, th, td {
 	margin: 0;
 	padding: 0;
 	border: 0;
-/* 	font: inherit; */
 	font-size: 100%;
 	vertical-align: baseline;
 }
