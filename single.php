@@ -5,11 +5,10 @@
 			<?php if (have_posts()) : ?>
 				<?php while (have_posts()) : the_post(); ?>
 					<header>
-						<h1><?php the_title(); ?></h1>
+						<div id="entryTitle"><?php the_title(); ?></div>
 						<ul id="entryMeta" class="clearfix">
 							<li><?php the_time('Y年m月j日') ?></li>
 							<li>カテゴリー： <?php the_category(', ') ?></li>
-							<li>タグ： <?php the_tags('', ', '); ?></li>
 						</ul>
 					</header>
 					<div id="entryBody">

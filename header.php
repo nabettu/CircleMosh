@@ -27,16 +27,15 @@
 				<?php if(is_home()): ?>
 					<li><a href="#wrapper">Home</a></li>
 				<?php else : ?>
-					<li><a href="<?php bloginfo('url'); ?>">Home</a></li>
+					<li><a href="<?php bloginfo('url'); ?>">Top</a></li>
 				<?php endif; ?>
-					<li><a href="#app">App</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#Category">Category</a></li>
+					<li><a href="#Author">Author</a></li>
 			</ul>
 		</div>
 		<?php if(!is_single()): // 記事ページではない場合header画像を表示 ?>
 			<div id="headImage" style="background:url(<?php bloginfo('template_url'); ?>/img/header.png) no-repeat; background-size: cover;">
-				<p>昼飯おごって(^o^)/</p>
+				<p><?php bloginfo('description'); ?></p>
 			</div>
 		<?php endif; ?>
 	</div>

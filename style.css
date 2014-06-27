@@ -44,12 +44,12 @@ body {
 	text-align: center;
 	font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
 	line-height: 1;
-	background-color: #ffffff;
+	background-color: #F5F5F5;
 	color: #3d3d3d;
 }
 
-a {color: #5fbda0; text-decoration: underline;}
-a:hover { color: #8db6cd; text-decoration: underline; }
+a {color: #5EBABA; text-decoration: underline;}
+a:hover { color: #FDC44F; text-decoration: underline; }
 
 /* remove float */
 
@@ -75,8 +75,10 @@ a:hover { color: #8db6cd; text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6, /* (nav) */#fixed li {font-size: 150%;}
 
-.title {margin: 0 0 20px 0;}
-
+.title {
+	margin: 0 0 20px 0;
+	color:#FDC44F;
+}
 /* section */
 
 section {padding: 4% 0;}
@@ -94,15 +96,17 @@ header
 ========================================================================== */
 
 #header {
-
 }
 
 #fixed {
 	width: 100%;
 	position: fixed;
 	top: 0px;
-	background-color: #ffffff;
 	box-shadow: 0 0 4px 0px;
+	background-color: #FDC44F;
+	filter: alpha(opacity=75);
+	  -moz-opacity:0.75;
+ 	 opacity:0.75;
 }
 
 #fixed img {
@@ -112,21 +116,20 @@ header
 #fixed ul {
 	width: 100%;
 	padding: 0 20%;
-	background-color: #ffffff;
 }
 
 #fixed li a:link, #fixed li a:visited {
 	text-decoration: none;
-	color: #999999;
+	color: #ffffff;
 }
 
 #fixed li a:hover {
-	color: #8db6cd;
+	color: #000000;
 	text-decoration: none;
 }
 
 #fixed li {
-	width: 15%;
+	width: 20%;
 	float: left;
 	font-weight: lighter;
 	padding: 2px 0;
@@ -134,7 +137,13 @@ header
 
 #headImage {
 	margin: 104px 0 0 0;
-	min-height: 180px;
+	min-height: 320px;
+}
+
+@media screen and (max-width: 640px) {
+	#headImage {
+		min-height: 120px;
+	}
 }
 
 #headImage p {
@@ -156,7 +165,7 @@ header
 
 	#fixed li {
 		font-size: 110%;
-		width: 25%;
+		width: 33.33%;
 	}
 	
 	#headImage {
@@ -174,32 +183,28 @@ blog
 ========================================================================== */
 
 /* article */
-
-#blog {
-	
+article {
+	width: 30%;
+	display:inline-block;
+	margin:1%;
 }
 
-#blog article {
-	padding: 40px 0;
-}
-
-#blog article h1 a {
-	color: #51A188;
-}
-
-#blog article h1 a:hover {
-	text-decoration: underline;
-	color: #8db6cd;
+article a{
+	text-decoration: none;
 }
 
 .entrySummary {
+	width: 100%;
 	max-width: 800px;
+	display:inline-block;
+	margin-top: 20px;
 }
 
 .entrySummary img {
-	float: left;
-	max-width: 200px;
-	margin-right: 30px;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	border: 3px solid #FDC44F;
 }
 
 .entrySummary p {
@@ -207,51 +212,53 @@ blog
 	line-height:200%;
 }
 
-.summaryMeta li {
-	margin: 10px 20px 0px 0;
-	float: left;
+.post-link {
 }
 
-.summaryMeta li:nth-child(1) a {
-	color: #ffffff;
-	padding: 5px;
-	background-color: #5fbda0;
-	text-decoration: none;
+.post-caption {
+	display: none;
 }
 
-.summaryMeta li:nth-child(1) a:hover {
+a.post-link:hover .post-caption{
+	display: block;
+	float:left;
+	position: relative;
+	background-color: #FDC44F;
+	filter: alpha(opacity=75);
+	-moz-opacity:0.75;
+ 	opacity:0.75;
 	color: #ffffff;
-	padding: 5px;
-	background-color: #8db6cd;
-	text-decoration: none;
+	width:100%;
+	height: auto;
+	top: -230px;
+	left:3px;
+	border-radius: 10%;
+}
+
+.post-date {
+	position: relative;
+	top: -70px;
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+	background-color: #FDC44F;
+	line-height: 80px;
+	color: #ffffff;
 }
 
 @media screen and (max-width: 640px) {
 
-	.entrySummary img {
-		float: none;
-		max-width: 100%;
-		margin: 0;
+	article {
+		width: 80%;
+		margin:0;
 	}
-	
-	.summaryMeta li {
-		float: none;
-		margin: 15px 0;
+
+	a.post-link:hover .post-caption{
+		top: -280px;
 	}
-	
-	#blog header {
-		max-width: 100%;
-	}
-	
-	#blog h1 {
-		max-width: 95%;
-		margin: 0 auto;
-		text-align: left;
-	}
-	
-	.entrySummary p {
-		width: 95%;
-		margin: 0 auto;
+
+	.post-date {
+		top:-100px;
 	}
 
 }
@@ -304,13 +311,16 @@ blog
 /* entry */
 
 #entryContent a {
-	text-decoration: underline;
-	color: #51A188;
 }
 
 #entryContent a:hover {
-	text-decoration: underline;
-	color: #8db6cd;
+}
+
+#entryTitle {
+	font-size: 200%;
+	text-align: left;
+	line-height:250%;
+	color: #5EBABA;
 }
 
 #entryContent {
@@ -337,7 +347,7 @@ blog
 }
 
 #entryMeta li {
-	width: 33.3%;
+	width: 50%;
 	float: left;
 	text-align: left;
 	border-bottom: 1px dashed #cccccc;
@@ -437,38 +447,39 @@ pagenation
 }
 
 /* ==========================================================================
-app
+Category
 ========================================================================== */
 
-#app {
-	background-color: #f4f4f4;
+#Category {
+	background-color: #AAAAAA;
+	color: #ffffff;
 }
 
-#app section {
-
-}
-
-#app h1 {
+#Category section {
 
 }
 
-#app img {
+#Category h1 {
+
+}
+
+#Category img {
 	max-width: 100%;
 	height: auto;
 }
 
-#app p {
+#Category p {
 	padding: 10px 0;
 	font-size: 120%;
 }
 
 @media screen and (max-width: 640px) {
 
-	#app p {
+	#Category p {
 		padding: 0;
 	}
 
-	#app img {
+	#Category img {
 		max-width: 20%;
 		height: auto;
 	}
@@ -476,29 +487,37 @@ app
 }
 
 /* ==========================================================================
-about
+Author
 ========================================================================== */
 
-#about {
+#Author {
+}
+
+#Author section {
 
 }
 
-#about section {
+#Author h1 {
 
 }
 
-#about h1 {
-
-}
-
-#about img {
+#Author .profile {
 	float: left;
+	border-radius: 50%;
 	max-width: 100%;
 	height: auto;
 	margin: 0 2% 0 20%;
 }
 
-#about p {
+#Author img {
+	float: left;
+	border-radius: 50%;
+	max-width: 5%;
+	height: auto;
+	margin: 0 1% 0 1%;
+}
+
+#Author p {
 	font-size: 120%;
 	text-align: left;
 	line-height:200%;
@@ -507,13 +526,13 @@ about
 
 @media screen and (max-width: 640px) {
 
-	#about img {
+	#Author img {
 		max-width: 50%;
 		float: none;
 		margin: 0;
 	}
 	
-	#about p {
+	#Author p {
 		text-align: left;
 		line-height:2;
 		margin: 0 auto;
@@ -521,61 +540,11 @@ about
 		font-size: 100%;
 	}
 }
-
-/* ==========================================================================
-contact
-========================================================================== */
-
-#contact {
-	background-color: #9cefed;
-}
-
-#contact section {
-	max-width: 80%;
-}
-
-#contact h1 {
-
-}
-
-#contact ul {
-	max-width: 80%;
-}
-
-#contact li {
-	width: 33%;
-	float: left;
-}
-
-#contact li:nth-child(2) {
-	width: 34%;
-}
-
-#contact li img {
-	max-width: 100%;
-}
-
-@media screen and (max-width: 640px) {
-	
-	#contact section {
-		max-width: 100%;
-	}
-	
-	#contact ul {
-		max-width: 100%;
-	}
-	
-	#contact li img {
-		max-width: 70%;
-	}
-	
-}
-
 /* ==========================================================================
 footer
 ========================================================================== */
 
 #mainFooter {
 	padding: 20px 0;
-	background-color: #9cefed;
+	background-color: #FDC44F;
 }

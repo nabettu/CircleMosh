@@ -3,27 +3,27 @@
 		<!-- widget -->
 		<?php get_sidebar('footer'); ?>
 	</div>
-	<!-- app -->
-	<div id="app">
+	<!-- Category -->
+	<div id="Category">
 		<section>
-			<h1 class="title">App</h1>
-			<p class="appTitle">your app</p>
-			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/profile_200.png"></a>
+			<h1 class="title">Category</h1>
+			<p class="appTitle">カテゴリ一覧を出す</p>
 		</section>
 	</div>
-	<!-- about -->
-	<div id="about">
+	<!-- Author -->
+	<div id="Author">
 		<section class="clearfix">
-			<h1 class="title">About</h1>
-			<img src="<?php bloginfo('template_url'); ?>/img/profile_200.png">
-			<p>自己紹介をどうぞ。</p>
-		</section>
-	</div>
-	<!-- contact -->
-	<div id="contact">
-		<section class="centering">
-			<h1 class="title">Contact</h1>
-			<ul class="centering clearfix">
+			<h1 class="title">Author</h1>
+			<h2>渡邊 タツアキ　Watanabe Tatsuaki</h2>
+
+			<img class="profile" src="http://www.gravatar.com/avatar/17d7df2ee1ecb4ddf6a0ac1261e14bf4.jpg?s=256&r=g">
+			<br>
+			<p>1988年仙台生まれ。</p>
+			<p>仕事はFujitsuでPC開発を、</p>
+			<p>趣味でWebサービスを作っています。</p>
+			<p>2014年4月より育児休暇取得中です。</p>
+			<br>
+			<ul>
 				<li><a href="https://www.facebook.com/chucker34"><img src="<?php bloginfo('template_url'); ?>/img/twitter_160.png"></a></li>
 				<li><a href="https://www.facebook.com/chucker34"><img src="<?php bloginfo('template_url'); ?>/img/facebook_160.png"></a></li>
 				<li><img src="<?php bloginfo('template_url'); ?>/img/mail_160.png"></li>

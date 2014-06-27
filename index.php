@@ -2,25 +2,26 @@
 	<!-- blog -->
 	<div id="blog">
 		<?php if (have_posts()) : ?>
+			<div class="entrySummary centering">
 			<?php while (have_posts()) : the_post(); ?>
 				<article>
-					<header>
-						<h1 class="title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-                        <?php the_title(); ?></a></h1>
-					</header>
-					<div class="entrySummary centering">
+					<a class="post-link" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('excerpt-thumbnail') ?></a>
+							<?php the_post_thumbnail('thumb80') ?>
+						<?php else :?>
+							<img src="<?php bloginfo('template_url'); ?>/img/nothumb.png" >
 						<?php endif;?>
-						<?php the_excerpt(); ?>
-						<ul class="summaryMeta clearfix">
-							<li><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">続きを読む</a></li>
-							<li>カテゴリー： <?php the_category(', ') ?></li>
-							<li>タグ： <?php the_tags('', ', '); ?></li>
-						</ul>
-					</div>
+						<div class="post-date">
+							<?php the_time('m/d'); ?>
+						</div>
+						<div class="post-caption">
+							<h2><?php the_title_attribute(); ?></h2><br>
+							<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
+						</div>
+					</a>
 				</article>
 			<?php endwhile; ?>
+			</div>
 			<!-- page -->
 			<div id="paginationBox" class="clearfix">
 				<?php if (function_exists("pagination")) {
