@@ -1,1 +1,1 @@
-<a href="http://www.fuzzydevelopment.net/like-striking-261.html">ペラ１UIのWordPressテーマつくったのでよかったら使って下さい</a>
+ペラ１UIのWordPressテーマで、<a href="http://www.fuzzydevelopment.net/">かわかみさんのテーマ</a> をforkして作りました。sourceは<a href="https://github.com/tatsuakiw/CircleMosh">こちら</a>
