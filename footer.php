@@ -1,13 +1,7 @@
-	<!-- archive -->
-	<div id="archive" class="clearfix">
-		<!-- widget -->
-		<?php get_sidebar('footer'); ?>
-	</div>
 	<!-- Category -->
 	<div id="Category">
 		<section>
-			<h1 class="title">Category</h1>
-			<p class="appTitle">カテゴリ一覧を出す</p>
+			<?php get_sidebar('footer'); ?>
 		</section>
 	</div>
 	<!-- Author -->
