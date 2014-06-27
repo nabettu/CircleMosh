@@ -14,7 +14,7 @@
 	<div id="Author">
 		<section class="clearfix">
 			<h1 class="title">Author</h1>
-			<h2>渡邊 タツアキ　Watanabe Tatsuaki</h2>
+			<h2><nobr>渡邊 タツアキ</nobr> <nobr>Watanabe Tatsuaki</nobr></h2>
 
 			<img class="profile" src="http://www.gravatar.com/avatar/17d7df2ee1ecb4ddf6a0ac1261e14bf4.jpg?s=256&r=g">
 			<br>

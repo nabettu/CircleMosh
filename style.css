@@ -183,6 +183,13 @@ blog
 ========================================================================== */
 
 /* article */
+.entrySummary {
+	width: 100%;
+	max-width: 800px;
+	display:inline-block;
+	margin-top: 20px;
+}
+
 article {
 	width: 30%;
 	display:inline-block;
@@ -191,13 +198,6 @@ article {
 
 article a{
 	text-decoration: none;
-}
-
-.entrySummary {
-	width: 100%;
-	max-width: 800px;
-	display:inline-block;
-	margin-top: 20px;
 }
 
 .entrySummary img {
@@ -213,6 +213,7 @@ article a{
 }
 
 .post-link {
+	position: relative;
 }
 
 .post-caption {
@@ -222,21 +223,20 @@ article a{
 a.post-link:hover .post-caption{
 	display: block;
 	float:left;
-	position: relative;
-	background-color: #FDC44F;
-	filter: alpha(opacity=75);
-	-moz-opacity:0.75;
- 	opacity:0.75;
+	position: absolute;
 	color: #ffffff;
 	width:100%;
 	height: auto;
-	top: -230px;
-	left:3px;
-	border-radius: 10%;
+	top:-130px;
+	background-color: #FDC44F;
+	filter: alpha(opacity=75);
+	-moz-opacity:0.75;
+   	opacity:0.75;
 }
 
 .post-date {
-	position: relative;
+	position: absolute;
+	float:left;
 	top: -70px;
 	width:80px;
 	height:80px;
@@ -250,7 +250,6 @@ a.post-link:hover .post-caption{
 
 	article {
 		width: 80%;
-		margin:0;
 	}
 
 	a.post-link:hover .post-caption{
@@ -320,7 +319,7 @@ a.post-link:hover .post-caption{
 	font-size: 200%;
 	text-align: left;
 	line-height:250%;
-	color: #5EBABA;
+	color: #FDC44F;
 }
 
 #entryContent {
@@ -347,7 +346,7 @@ a.post-link:hover .post-caption{
 }
 
 #entryMeta li {
-	width: 50%;
+	width: 33%;
 	float: left;
 	text-align: left;
 	border-bottom: 1px dashed #cccccc;
