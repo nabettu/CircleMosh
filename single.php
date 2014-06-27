@@ -15,11 +15,11 @@
 						<?php the_content(); ?>
 					</div>
 				<?php endwhile; ?>	
-		</article>
 			<?php else : ?>
 				<h2 class="title">記事が見つかりませんでした。</h2>
 				<p>検索で見つかるかもしれません。</p><br />
 				<?php get_search_form(); ?>
 			<?php endif; ?>
+		</article>
 	</div>
 	<?php get_footer(); ?>
