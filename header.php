@@ -4,11 +4,57 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta name="viewport" content="width=device-width" />
-<!--
-<meta name="description" content="Strikingly風UIのWordPressテーマです。">
-<meta name="keywords" content="WordPress 無料 テーマ, Strikingly">
--->
-<!-- WordPressのjQueryを読み込ませない -->
+
+<!-- meta -->
+<meta property="og:title" content="<?php
+global $page, $paged;
+if(is_front_page()):
+bloginfo('name');
+elseif(is_single()):
+wp_title('');
+elseif(is_page()):
+wp_title('');
+elseif(is_archive()):
+wp_title('|',true,'right');
+bloginfo('name');
+elseif(is_search()):
+wp_title('-',true,'right');
+elseif(is_404()):
+echo'404 - ';
+bloginfo('name');
+endif;
+if($paged >= 2 || $page >= 2):
+echo'-'.sprintf('%sページ',
+max($paged,$page));
+endif;
+?>">
+<meta property="og:type" content="blog" />
+<meta property="og:url" content="
+<?php if (is_home()) { echo home_url(); } else { the_permalink(); }?>
+" />
+<meta property="og:image" content="<?php 
+if (is_home()) {
+	bloginfo('template_directory');
+	echo "/img/logo600.png";
+} else { 
+	$image_id = get_post_thumbnail_id();
+	$image_url = wp_get_attachment_image_src($image_id, true);
+	echo $image_url[0];
+};
+?>"/>
+<meta property="og:description" content="<?php
+//if (is_home()) {
+	bloginfo('description');
+//} else {
+//	echo mb_substr( strip_tags( stinger_noshotcode( $post->post_content ) ), 0, 50 ) . ''; }
+?>">
+<meta property="og:site_name" content="つくログ">
+<meta property="fb:admins" content="1667345770">
+<meta property="og:locale" content="ja_JP" />
+<link rel="publisher" href="https://plus.google.com/u/0/112541613552705398200/about"/>
+<link rel="author" href="https://plus.google.com/112541613552705398200/posts">
+<!-- meta end-->
+
 <?php wp_deregister_script('jquery'); ?>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/stlike.js"></script>

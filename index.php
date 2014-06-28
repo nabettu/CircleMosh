@@ -7,7 +7,7 @@
 				<article>
 					<a class="post-link" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail('thumb80') ?>
+							<?php the_post_thumbnail('thumb200') ?>
 						<?php else :?>
 							<img src="<?php bloginfo('template_url'); ?>/img/nothumb.png" >
 						<?php endif;?>

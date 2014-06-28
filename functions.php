@@ -17,6 +17,7 @@ register_sidebar(
 // アイキャッチ画像
 add_theme_support( 'post-thumbnails' );
 add_image_size('excerpt-thumbnail', 200, 140, true);
+add_image_size('thumbnail200', 200, 200, true);
 
 // ページネーション
 function pagination($pages = '', $range = 4)

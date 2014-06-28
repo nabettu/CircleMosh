@@ -14,6 +14,7 @@
 					<div id="entryBody">
 						<?php the_content(); ?>
 					</div>
+					<?php include 'sns.php';?>
 				<?php endwhile; ?>	
 			<?php else : ?>
 				<h2 class="title">記事が見つかりませんでした。</h2>
