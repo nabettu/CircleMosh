@@ -68,7 +68,7 @@ if (is_home()) {
 	<!-- header -->
 	<div id="header">
 		<div id="fixed">
-			<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/bloglogo.png"></a>
+			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/bloglogo.png"></a>
 			<ul class="clearfix">
 				<?php if(is_home()): ?>
 					<li><a href="#wrapper">Home</a></li>

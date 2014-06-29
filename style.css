@@ -200,7 +200,7 @@ blog
 	width: 100%;
 	height: auto;
 	border-radius: 50%;
-	border: 3px solid #FDC44F;
+	border: 2px solid #FFFFFF;
 }
 
 .entrySummary p {
@@ -229,6 +229,8 @@ a.post-link:hover .post-caption{
 	filter: alpha(opacity=75);
 	-moz-opacity:0.75;
    	opacity:0.75;
+   	font-size: 80%;
+   	color: #3d3d3d;
 }
 
 .post-date {
@@ -469,17 +471,23 @@ Category
 	color: #ffffff;
 }
 
-#Category section {
-
+#Category a{
+	color: #FDC44F;
+	text-decoration: none;
 }
 
-#Category h1 {
+#Category section {
+}
 
+#Category li {
+	display: inline-block;
+	max-width: 18%;
+	height: auto;
+	margin: 5px;
 }
 
 #Category img {
-	max-width: 100%;
-	height: auto;
+	border-radius: 50%;
 }
 
 #Category p {

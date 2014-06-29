@@ -1,13 +1,17 @@
 	<?php get_header(); ?>
 	<!-- blog -->
 	<div id="blog">
+		<?php if(is_category()): ?>
+		<h1><?php single_cat_title(); ?>の記事一覧</h1>
+		<?php endif; ?>
+
 		<?php if (have_posts()) : ?>
 			<div class="entrySummary centering">
 			<?php while (have_posts()) : the_post(); ?>
 				<article>
 					<a class="post-link" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail('thumb200') ?>
+							<?php the_post_thumbnail('thumbnail200') ?>
 						<?php else :?>
 							<img src="<?php bloginfo('template_url'); ?>/img/nothumb.png" >
 						<?php endif;?>
@@ -15,7 +19,7 @@
 							<?php the_time('m/d'); ?>
 						</div>
 						<div class="post-caption">
-							<h2><?php the_title_attribute(); ?></h2><br>
+							<h3><?php the_title_attribute(); ?></h3><br>
 							<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
 						</div>
 					</a>
