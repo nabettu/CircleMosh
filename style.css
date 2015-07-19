@@ -18,7 +18,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
-fieldset, form, legend, caption, 
+fieldset, form, legend, caption,
 tbody, tfoot, thead, table, label, tr, th, td {
 	margin: 0;
 	padding: 0;
@@ -48,8 +48,8 @@ body {
 	color: #3d3d3d;
 }
 
-a {color: #5EBABA; text-decoration: underline;}
-a:hover { color: #FDC44F; text-decoration: underline; }
+a {color: #FDC44F; text-decoration: underline;}
+a:hover { color: #FFD48F; text-decoration: underline; }
 
 /* remove float */
 
@@ -126,7 +126,7 @@ header
 }
 
 #fixed li a:hover {
-	color: #5EBABA;
+	color: #FDF44F;
 	text-decoration: none;
 }
 
@@ -161,18 +161,18 @@ header
 	}
 
 	#fixed li {
-		font-size: 110%;
+		font-size: 90%;
 		width: 33.33%;
 	}
-	
+
 	#headImage {
 		margin: 76px 0 0 0;
 	}
-	
+
 	#headImage p {
 		padding: 56px 0 0 0;
 	}
-	
+
 }
 
 /* ==========================================================================
@@ -246,6 +246,16 @@ a.post-link:hover .post-caption{
 	color: #ffffff;
 }
 
+blockquote{
+	background-color: #eeeedd;
+  background-image: url(http://t-tu.com/blog/wp-content/themes/CircleMosh/img/xquote.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+	padding-top: 70px;
+  padding-right: 10px;
+	padding-left: 30px;
+}
+
 @media screen and (max-width: 640px) {
 
 	.entrySummary article {
@@ -309,19 +319,20 @@ a.post-link:hover .post-caption{
 }
 
 @media screen and (max-width: 640px) {
-	
+
 	#archive section {
 		float: none;
 		width: 95%;
 	}
-	
+
 }
 
 /* entry */
 
 #entryContent a {
 	text-decoration: underline;
-	color: #51A188;
+	color: #FDC44F;
+	word-wrap: break-word;
 }
 
 #entryContent a:hover {
@@ -337,18 +348,26 @@ a.post-link:hover .post-caption{
 #entryTitle {
 	font-size: 200%;
 	text-align: left;
-	line-height:250%;
+	line-height:150%;
+	font-weight:bold;
 	color: #FDC44F;
 }
 
 #entryContent article {
-	max-width: 800px; 
+	max-width: 800px;
 }
 
-#entryContent h1 {
+
+#entryContent h1,
+#entryContent h2,
+#entryContent h3 {
 	text-align: left;
-	color: #51A188;
-	margin: 20px 0;
+	background-color:#FDC44F;
+	padding: 10px;
+	color: #ffffff;
+	margin: 0 0 0 -10px;
+	box-shadow: 5px 5px 5px #AD741F;
+	line-height: 100%;
 }
 
 #entryContent h2 {
@@ -384,6 +403,7 @@ a.post-link:hover .post-caption{
 @media screen and (max-width: 640px) {
 
 	#entryContent {
+		line-height:150%;
 		margin: 80px 0 0 0;
 	}
 
@@ -395,16 +415,15 @@ a.post-link:hover .post-caption{
 	#entryTitle {
 		font-size: 150%;
 		text-align: left;
-		line-height:100%;
+		line-height:120%;
 		color: #FDC44F;
 	}
 
 	#entryContent h1 {
-		
 		max-width: 95%;
 		margin: 0 auto;
 	}
-	
+
 	#entryMeta li {
 		float: none;
 		width: 100%;
@@ -415,12 +434,16 @@ a.post-link:hover .post-caption{
 		width: 95%;
 		margin: 0 auto;
 	}
-	
+
 	#entryBody img {
 		width: 100%;
 	}
 }
 
+strong {
+	font-weight: bold;
+	background-image: linear-gradient(transparent 40%, rgb(255, 230, 150) 40%);
+}
 /* ==========================================================================
 pagenation
 ========================================================================== */
@@ -443,7 +466,7 @@ pagenation
 	display: inline-block;
 	vertical-align: middle;
 }
- 
+
 .pagination span, .pagination a {
 	display:block;
 	float:left;
@@ -454,15 +477,15 @@ pagenation
 	color:#fff;
 	background: #A9A9A9;
 }
- 
+
 .pagination a:hover{
 	color:#fff;
-	background: #FDC44F;
+	background: #FDF44F;
 }
- 
+
 .pagination .current{
 	padding:15px 19px 14px 19px;
-	background: #5EBABA;
+	background: #FDC44F;
 	color:#fff;
 }
 
@@ -475,7 +498,7 @@ sns
 
 .sns li {
 	float: left;
-	margin-right: 10px;
+	margin-right: 5px;
 	list-style-type: none;
 }
 
@@ -526,6 +549,7 @@ Author
 ========================================================================== */
 
 #Author {
+	text-align:center;
 }
 
 #Author section {
@@ -537,50 +561,37 @@ Author
 }
 
 #Author .profile {
-	float: left;
 	border-radius: 50%;
 	max-width: 100%;
 	height: auto;
-	margin: 0 5% 0 20%;
 }
 
 #Author img {
-	float: left;
 	border-radius: 50%;
-	max-width: 5%;
 	height: auto;
-	margin: 0 1% 0 1%;
+	max-width:40%;
+}
+
+#Auther ul{
+	display:block;
+	margin: 0 auto;
+}
+
+#Author li {
+	display:inline;
 }
 
 #Author .about {
 	display: block;
+	margin:0px auto;
+	text-align:center;
 }
 
 #Author p {
 	font-size: 120%;
 	text-align: left;
 	line-height:200%;
-	margin: 0 20% 0 2%;	
-}
-
-@media screen and (max-width: 640px) {
-
-	#Author img {
-		max-width: 15%;
-		float: left;
-		margin: 10px;
-	}
-	
-	#Author .profile {
-		margin: 2%;		
-	}
-	#Author p {
-		text-align: left;
-		line-height:2;
-		margin: 0 auto;
-		padding: 0 5%;
-		font-size: 100%;
-	}
+	margin: 0 20% 0 2%;
 }
 /* ==========================================================================
 footer

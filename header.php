@@ -32,21 +32,22 @@ endif;
 <meta property="og:url" content="
 <?php if (is_home()) { echo home_url(); } else { the_permalink(); }?>
 " />
-<meta property="og:image" content="<?php 
+<meta property="og:image" content="<?php
 if (is_home()) {
 	bloginfo('template_directory');
 	echo "/img/logo600.png";
-} else { 
+} else {
 	$image_id = get_post_thumbnail_id();
 	$image_url = wp_get_attachment_image_src($image_id, true);
 	echo $image_url[0];
 };
 ?>"/>
 <meta property="og:description" content="<?php
-//if (is_home()) {
+if (is_home()) {
 	bloginfo('description');
-//} else {
-//	echo mb_substr( strip_tags( stinger_noshotcode( $post->post_content ) ), 0, 50 ) . ''; }
+} else {
+	wp_title(''); echo " | "; bloginfo('description');
+}
 ?>">
 <meta property="og:site_name" content="つくログ">
 <meta property="fb:admins" content="1667345770">

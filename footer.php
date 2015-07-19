@@ -1,34 +1,34 @@
 	<!-- Category -->
 	<div id="Category">
 		<section>
-			<h1 class="title">Category</h1>
+			<h2 class="title">Category</h2>
 			<ul>
-				<li><a href="http://blog.t-tu.com/category/ios%E3%82%A2%E3%83%97%E3%83%AA/"><img src="<?php bloginfo('template_url'); ?>/img/apple.png"><br>アプリ</a></li>
-				<li><a href="http://blog.t-tu.com/category/web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/"><img src="<?php bloginfo('template_url'); ?>/img/earth.png"><br><nobr>Webサービス</nobr></a></li>
-				<li><a href="http://blog.t-tu.com/category/%E7%B4%B9%E4%BB%8B/"><img src="<?php bloginfo('template_url'); ?>/img/radio.png"><br>紹介</a></li>
-				<li><a href="http://blog.t-tu.com/category/wordpress/"><img src="<?php bloginfo('template_url'); ?>/img/wp.png"><br>Wordpress</a></li>
-				<li><a href="http://blog.t-tu.com/category/思考/"><img src="<?php bloginfo('template_url'); ?>/img/light.png"><br><nobr>日常・その他</nobr></a></li>
+				<li><a href="http://t-tu.com/blog/category/ios%E3%82%A2%E3%83%97%E3%83%AA/"><img src="<?php bloginfo('template_url'); ?>/img/apple.png"><br>アプリ</a></li>
+				<li><a href="http://t-tu.com/blog/category/web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/"><img src="<?php bloginfo('template_url'); ?>/img/earth.png"><br><nobr>Webサービス</nobr></a></li>
+				<li><a href="http://t-tu.com/blog/category/%E7%B4%B9%E4%BB%8B/"><img src="<?php bloginfo('template_url'); ?>/img/radio.png"><br>紹介</a></li>
+				<li><a href="http://t-tu.com/blog/category/wordpress/"><img src="<?php bloginfo('template_url'); ?>/img/wp.png"><br>Wordpress</a></li>
+				<li><a href="http://t-tu.com/blog/category/思考/"><img src="<?php bloginfo('template_url'); ?>/img/light.png"><br><nobr>日常・その他</nobr></a></li>
 			</ul>
 		</section>
 	</div>
 	<!-- Author -->
 	<div id="Author">
-		<section class="clearfix">
-			<h1 class="title">Author</h1>
-			<h2><nobr>渡邊 タツアキ</nobr> <nobr>Watanabe Tatsuaki</nobr></h2>
+		<section>
+			<h2 class="title">Author</h1>
+			<h3><nobr>渡邊 タツアキ</nobr> <nobr>Watanabe Tatsuaki</nobr></h3>
 
 			<img class="profile" src="http://www.gravatar.com/avatar/17d7df2ee1ecb4ddf6a0ac1261e14bf4.jpg?s=256&r=g">
-			<div class="about">
-				<p>1988年仙台生まれ。</p>
-				<p>仕事はFujitsuでPC開発を、</p>
-				<p>個人でWebサービスやアプリを作っています。</p>
-				<p>2014年4月より育児休暇取得中。</p>
-			</div>
+			<p class="about">
+				1988年仙台生まれ。<br>
+				仕事はFujitsuでPC開発を、個人でWebサービスやアプリを作っています。</br>
+				<a href="http://kumonos.jp/" target="_blank">kumonos</a>という集団でもこそこそものを作っています。<br>
+				2014年4月より半年間育児休暇取得し復職。ポートフォリオは<a href="http://t-tu.com" target="_blank">こちら</a>
+			</p>
 			<ul>
-				<li><a href="https://www.github.com/tatsuakiw" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/github_160.png"></a></li>
-				<li><a href="https://www.twitter.com/tatsuaki_w" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_160.png"></a></li>
-				<li><a href="https://www.facebook.com/tatsuaki.watanabe.58" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook_160.png"></a></li>
-				<li><a href="mailto:tatsuaki.w@gmail.com"><img src="<?php bloginfo('template_url'); ?>/img/mail_160.png"></a></li>
+				<li><a href="https://www.github.com/nabettu" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/github_160.png"></a></li>
+				<li><a href="https://www.twitter.com/nabettu" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_160.png"></a></li>
+				<li><a href="https://www.facebook.com/nabettu" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook_160.png"></a></li>
+				<li><a href="mailto:info@t-tu.com"><img src="<?php bloginfo('template_url'); ?>/img/mail_160.png"></a></li>
 			</ul>
 		</section>
 	</div>
@@ -37,7 +37,7 @@
 		<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
 	</footer>
 </div>
-<?php wp_footer(); ?> 
+<?php wp_footer(); ?>
 </body>
 <!--ここからanalystic-->
 <script>

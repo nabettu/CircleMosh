@@ -19,7 +19,7 @@
 							<?php the_time('m/d'); ?>
 						</div>
 						<div class="post-caption">
-							<h3><?php the_title_attribute(); ?></h3><br>
+							<h2><?php the_title_attribute(); ?></h2><br>
 							<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?>
 						</div>
 					</a>
